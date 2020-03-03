@@ -1,2 +1,2 @@
-# Visualizacion-2020
+# Infovis
 Visualización de la Información  1C 2020 - Alejandro Santoflaminio 
