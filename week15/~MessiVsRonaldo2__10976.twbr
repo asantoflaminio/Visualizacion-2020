@@ -1,0 +1,840 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0219.0753                               -->
+<workbook source-build='2020.1.0 (20201.20.0219.0753)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='MessiVsRonaldo_15870630074120' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='League' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Premier League&quot;'>
+        <calculation class='tableau' formula='&quot;Premier League&quot;' />
+        <members />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (MessiRonaldo)' inline='true' name='federated.0yxkx1i13r1tmm1e17jno1eijmn3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MessiRonaldo' name='excel-direct.1ma2ksl0imgpj21ef8g5s06nbtge'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ma2ksl0imgpj21ef8g5s06nbtge' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:J19:no:A1:J19:0' header='yes' outcome='6'>
+            <column datatype='string' name='Season' ordinal='0' />
+            <column datatype='string' name='Player' ordinal='1' />
+            <column datatype='integer' name='Liga_Goals' ordinal='2' />
+            <column datatype='integer' name='Liga_Asts' ordinal='3' />
+            <column datatype='integer' name='Liga_Aps' ordinal='4' />
+            <column datatype='integer' name='Liga_Mins' ordinal='5' />
+            <column datatype='integer' name='CL_Goals' ordinal='6' />
+            <column datatype='integer' name='CL_Asts' ordinal='7' />
+            <column datatype='integer' name='CL_Aps' ordinal='8' />
+            <column datatype='integer' name='CL_Mins' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Goals]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Goals</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Asts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Asts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Asts</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Aps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Aps]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Aps</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liga_Mins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Liga_Mins]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Liga_Mins</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Goals]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Goals</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Asts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Asts]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Asts</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Aps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Aps]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Aps</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CL_Mins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CL_Mins]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CL_Mins</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J19:no:A1:J19:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Asts:qk]&quot;' value='Champions League' />
+          <alias key='&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Goals:qk]&quot;' value='Champions League ' />
+          <alias key='&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Asts:qk]&quot;' value='La Liga ' />
+          <alias key='&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Goals:qk]&quot;' value='La Liga' />
+        </aliases>
+      </column>
+      <column caption='CL Aps' datatype='integer' name='[CL_Aps]' role='measure' type='quantitative' />
+      <column caption='CL Asts' datatype='integer' name='[CL_Asts]' role='measure' type='quantitative' />
+      <column caption='CL Goals' datatype='integer' name='[CL_Goals]' role='measure' type='quantitative' />
+      <column caption='CL Mins' datatype='integer' name='[CL_Mins]' role='measure' type='quantitative' />
+      <column caption='CL Goals/Min' datatype='real' name='[Calculation_3003408410138697728]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CL_Goals]/[CL_Mins]' />
+      </column>
+      <column caption='Liga Goals/Min' datatype='real' name='[Calculation_3003408410138808321]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Liga_Goals]/[Liga_Mins]' />
+      </column>
+      <column caption='CL' datatype='string' name='[Calculation_3003408410224553987]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &apos;Champions League&apos; THEN &apos;1&apos; ELSE &apos;0&apos; END' />
+      </column>
+      <column caption='Total goals' datatype='integer' name='[Calculation_3003408410429759501]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CL_Goals]+ [Liga_Goals]' />
+      </column>
+      <column caption='Total assists' datatype='integer' name='[Calculation_3003408410429816846]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Liga_Asts] + [CL_Asts]' />
+      </column>
+      <column caption='Liga Aps' datatype='integer' name='[Liga_Aps]' role='measure' type='quantitative' />
+      <column caption='Liga Asts' datatype='integer' name='[Liga_Asts]' role='measure' type='quantitative' />
+      <column caption='Liga Goals' datatype='integer' name='[Liga_Goals]' role='measure' type='quantitative' />
+      <column caption='Liga Mins' datatype='integer' name='[Liga_Mins]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+      <column-instance column='[Player]' derivation='Attribute' name='[attr:Player:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+      <column-instance column='[CL_Aps]' derivation='Sum' name='[sum:CL_Aps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Asts]' derivation='Sum' name='[sum:CL_Asts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Goals]' derivation='Sum' name='[sum:CL_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CL_Mins]' derivation='Sum' name='[sum:CL_Mins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_3003408410138697728]' derivation='Sum' name='[sum:Calculation_3003408410138697728:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_3003408410138808321]' derivation='Sum' name='[sum:Calculation_3003408410138808321:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_3003408410429759501]' derivation='Sum' name='[sum:Calculation_3003408410429759501:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_3003408410429816846]' derivation='Sum' name='[sum:Calculation_3003408410429816846:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Aps]' derivation='Sum' name='[sum:Liga_Aps:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Asts]' derivation='Sum' name='[sum:Liga_Asts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Goals]' derivation='Sum' name='[sum:Liga_Goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liga_Mins]' derivation='Sum' name='[sum:Liga_Mins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/aleja/Documents/ITBA/2020 1C/Visualizacion de la Informacion/infovis/week15/MessiVsRonaldo1.twb Files/federated.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Player</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Player]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Player</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Liga_Goals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Liga_Goals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Liga_Goals</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Liga_Asts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Liga_Asts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Liga_Asts</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Liga_Aps</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Liga_Aps]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Liga_Aps</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Liga_Mins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Liga_Mins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Liga_Mins</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CL_Goals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CL_Goals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CL_Goals</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CL_Asts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CL_Asts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CL_Asts</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CL_Aps</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CL_Aps]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CL_Aps</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CL_Mins</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CL_Mins]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CL_Mins</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.210356' measure-ordering='alphabetic' measure-percentage='0.728155' parameter-percentage='0.0614887' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410138808321:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Aps:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Mins:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429759501:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Mins:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Aps:qk]&quot;</bucket>
+            </map>
+            <map to='#a5a5a5'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Asts:qk]&quot;</bucket>
+            </map>
+            <map to='#a5a5a5'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Asts:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#f7be2c'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#f7be2c'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Goals:qk]&quot;</bucket>
+            </map>
+            <map to='#f7be2c'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[usr:Calculation_3003408410231832584:qk]&quot;</bucket>
+            </map>
+            <map to='#f7be2c'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[usr:Calculation_3003408410231959561:qk]&quot;</bucket>
+            </map>
+            <map to='#f7be2c'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[usr:Calculation_3003408410232774666:qk]&quot;</bucket>
+            </map>
+            <map to='#f7be2c'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[usr:Calculation_3003408410232811531:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429816846:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410138697728:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Player:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#2c7695'>
+              <multibucket>
+                <bucket>&quot;Messi&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Asts:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#2c7695'>
+              <multibucket>
+                <bucket>&quot;Messi&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Goals:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#2c7695'>
+              <multibucket>
+                <bucket>&quot;Messi&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Aps:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#2c7695'>
+              <multibucket>
+                <bucket>&quot;Messi&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Asts:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#2c7695'>
+              <multibucket>
+                <bucket>&quot;Messi&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Goals:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b64941'>
+              <multibucket>
+                <bucket>&quot;Ronaldo&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Asts:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b64941'>
+              <multibucket>
+                <bucket>&quot;Ronaldo&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Goals:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b64941'>
+              <multibucket>
+                <bucket>&quot;Ronaldo&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Aps:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b64941'>
+              <multibucket>
+                <bucket>&quot;Ronaldo&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Asts:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b64941'>
+              <multibucket>
+                <bucket>&quot;Ronaldo&quot;</bucket>
+                <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Goals:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Player:nk]' palette='traffic_light_10_0' type='palette'>
+            <map to='#ef6f6a'>
+              <bucket>&quot;Ronaldo&quot;</bucket>
+            </map>
+            <map to='#ffae34'>
+              <bucket>&quot;Messi&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Player:nk]' palette='traffic_light_10_0' type='palette'>
+            <map to='#ef6f6a'>
+              <bucket>&quot;Ronaldo&quot;</bucket>
+            </map>
+            <map to='#ffae34'>
+              <bucket>&quot;Messi&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='League' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Premier League&quot;'>
+          <calculation class='tableau' formula='&quot;Premier League&quot;' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MessiRonaldo)' name='federated.0yxkx1i13r1tmm1e17jno1eijmn3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yxkx1i13r1tmm1e17jno1eijmn3'>
+            <column caption='CL Asts' datatype='integer' name='[CL_Asts]' role='measure' type='quantitative' />
+            <column caption='CL Goals' datatype='integer' name='[CL_Goals]' role='measure' type='quantitative' />
+            <column caption='Liga Asts' datatype='integer' name='[Liga_Asts]' role='measure' type='quantitative' />
+            <column caption='Liga Goals' datatype='integer' name='[Liga_Goals]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CL_Asts]' derivation='Sum' name='[sum:CL_Asts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CL_Goals]' derivation='Sum' name='[sum:CL_Goals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Liga_Asts]' derivation='Sum' name='[sum:Liga_Asts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Liga_Goals]' derivation='Sum' name='[sum:Liga_Goals:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Asts:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Asts:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Goals:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Liga_Goals:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:CL_Asts:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Player:nk]' member='&quot;Messi&quot;' />
+              <groupfilter function='member' level='[none:Player:nk]' member='&quot;Ronaldo&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]</column>
+            <column>[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[Multiple Values]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]' value='195' />
+            <format attr='text-format' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[Multiple Values]' value='N' />
+            <format attr='font-family' data-class='subtotal' value='Webdings' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names]' value='bold' />
+            <format attr='font-size' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names]' value='12' />
+            <format attr='display' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#50b2ba' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='MS UI Gothic' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]' />
+              <text column='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[Multiple Values]</rows>
+        <cols>([federated.0yxkx1i13r1tmm1e17jno1eijmn3].[:Measure Names] / [federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk])</cols>
+      </table>
+      <simple-id uuid='{68E8FF61-282C-44E7-805E-24BC9FDF4553}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MessiRonaldo)' name='federated.0yxkx1i13r1tmm1e17jno1eijmn3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yxkx1i13r1tmm1e17jno1eijmn3'>
+            <column caption='CL Goals' datatype='integer' name='[CL_Goals]' role='measure' type='quantitative' />
+            <column caption='Total goals' datatype='integer' name='[Calculation_3003408410429759501]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[CL_Goals]+ [Liga_Goals]' />
+            </column>
+            <column caption='Liga Goals' datatype='integer' name='[Liga_Goals]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3003408410429759501]' derivation='Sum' name='[sum:Calculation_3003408410429759501:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='MS UI Gothic' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Season:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Season:nk]' value='12' />
+            <format attr='color' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Season:nk]' value='#ffffff' />
+            <format attr='font-family' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429759501:qk]' value='MS UI Gothic' />
+            <format attr='font-weight' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429759501:qk]' value='bold' />
+            <format attr='color' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429759501:qk]' value='#ffffff' />
+            <format attr='font-size' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429759501:qk]' value='14' />
+            <format attr='font-family' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Season:nk]' value='MS UI Gothic' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#50b2ba' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='MS UI Gothic' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-family' value='MS UI Gothic' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[sum:Calculation_3003408410429759501:qk]</rows>
+        <cols>[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Season:nk]</cols>
+      </table>
+      <simple-id uuid='{D29A300E-636B-416A-AAAF-A8DC1DF1D227}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#50b2ba' />
+        </style-rule>
+      </style>
+      <size maxheight='300' maxwidth='500' minheight='300' minwidth='500' preset-index='17' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='94666' id='5' param='horz' type='layout-flow' w='96800' x='1600' y='2667'>
+            <zone h='94666' id='3' type='layout-basic' w='96800' x='1600' y='2667'>
+              <zone h='94666' id='1' name='Sheet 1' show-title='false' w='96800' x='1600' y='2667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='96000' id='12' param='vert' type='layout-flow' w='95960' x='2020' y='2000'>
+                <zone fixed-size='280' h='96000' id='1' is-fixed='true' name='Sheet 1' show-title='false' w='95960' x='2020' y='2000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16ED25B3-D3D4-4F4C-8FF8-7BA00100BBD4}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='0.75' source-height='22'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EC4568C5-5A46-467F-A3C2-213EBC821423}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yxkx1i13r1tmm1e17jno1eijmn3].[none:Player:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F54C254-9341-4EC5-B706-8D7D29AC6EA1}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7BD3BFB8-7B6B-49C1-8707-DB13A3D81C56}' />
+    </window>
+  </windows>
+</workbook>
